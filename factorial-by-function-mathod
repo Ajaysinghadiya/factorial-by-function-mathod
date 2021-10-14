@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+void fact(int num)//callinf function begins fom here
+{
+
+    int factoriale = 1;//initialising 
+    for (int i = 2; i <= num; i++)//for loop begins 
+    {
+        factoriale = factoriale * i;//factorial
+    }
+    cout << factoriale << endl;//printing the factorial
+}
+
+int main()//execution begins from here
+{
+    int n;
+    cout << "enter a number :";
+    cin >> n;//taking input
+    fact(n);//calling fact function
+    return 0;
+}
